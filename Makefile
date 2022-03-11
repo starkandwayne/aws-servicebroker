@@ -33,6 +33,10 @@ debug: ## Builds a debuggable executable targeted to the host.
 	CGO_ENABLED=0 \
 	go build -o servicebroker --ldflags="-s" -gcflags="all=-N -l" github.com/awslabs/aws-servicebroker/cmd/servicebroker
 
+ocf: ## Builds a Open Source Cloud Foundry
+	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 \
+	go build -o packaging/cloudfoundry/resources/cfnsb --ldflags="-s" github.com/awslabs/aws-servicebroker/cmd/servicebroker
+
 cf: ## Builds a PCF tile and bosh release
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 \
     go build -o packaging/cloudfoundry/resources/cfnsb --ldflags="-s" github.com/awslabs/aws-servicebroker/cmd/servicebroker && \
