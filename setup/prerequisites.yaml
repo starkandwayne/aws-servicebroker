@@ -77,7 +77,7 @@ Resources:
             Effect: "Allow"
           - Action: [ "athena:*", "dynamodb:*", "kms:*", "elasticache:*", "elasticmapreduce:*", "kinesis:*", "rds:*",
                       "redshift:*", "route53:*", "s3:*", "sns:*", "sns:*", "sqs:*", "ec2:*", "iam:*", "lambda:*" ,
-                      "codecommit:*"]
+                      "codecommit:*", "mq:*"]
             Resource: "*"
             Effect: "Allow"
 Outputs:
