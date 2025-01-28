@@ -5,11 +5,9 @@ go 1.15
 require (
 	github.com/abbot/go-http-auth v0.4.0 // indirect
 	github.com/aws/aws-sdk-go v1.40.57
-	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/go-errors/errors v1.4.1
-	github.com/go-sql-driver/mysql v1.5.0 // indirect
-	github.com/golang/glog v1.0.0
+	github.com/golang/glog v1.2.4
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/jaymccon/osb-broker-lib v0.0.0-20180814224753-18f3aa144f18
